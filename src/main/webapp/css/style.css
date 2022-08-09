@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.formulairePrincipal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #5b7993;
+}
+
+.imageDes
+{
+    width: 15em;
+    margin-right: 15px;
+}
+
+.headDiv
+{
+    display: flex;
+    justify-content: center;
+}
+
+.elementPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2em;
+    margin-top: 70px;
+}
+
+h2{
+    margin-bottom: 50px;
+}
+
+.buttonValider{
+    width: 100px;
+    height: 40px;
+    border: solid 3px black;
+    border-radius: 15px;
+}
+
+.buttonValider:hover{
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jet de Dés | Tentez votre chance.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="formulairePrincipal">
+        <div class="headDiv">
+            <img class="imageDes" src="img/des.jpg" alt="image dés"/>
+            <h1>Bienvenue sur le jet de Dés: Tentez votre chance </h1>
+        </div>
+        <div class="elementPrincipal">
+            <h2>Merci de saisir un numéros entre 0 et 10.</h2>
+
+            <form action="ServletTirerUnNombre" method="GET">
+                <label for="nombre">Nombre : </label>
+                <input type="text" id="nombre" name="nombre">
+                <button class="buttonValider" type="submit">Valider</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
