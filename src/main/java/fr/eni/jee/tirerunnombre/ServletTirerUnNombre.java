@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Random;
 
+
+//Paramétre initialisation Servlet : URL ET PARAM
 @WebServlet(
         urlPatterns = "/ServletTirerUnNombre",
         initParams = {
@@ -24,6 +26,8 @@ public class ServletTirerUnNombre extends HttpServlet {
     private String  borneMax;
     private String  borneMin;
 
+
+    //Methode initialisation.
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
@@ -34,8 +38,10 @@ public class ServletTirerUnNombre extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
         int nbAlea  = rdn.nextInt((Integer.parseInt(this.borneMax) - Integer.parseInt(this.borneMin)) + Integer.parseInt(this.borneMin));
         String saisie = request.getParameter("nombre");
+
         System.out.println(nbAlea);
         System.out.println(saisie);
 
